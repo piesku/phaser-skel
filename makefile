@@ -16,6 +16,9 @@ minify: public/play/bundle.min.js
 serve:
 	@serve public
 
+watch:
+	@find $(CURDIR)/src | entr -c $(MAKE) -s all
+
 clean:
 	@rm -f public/play/bundle.*
 	@echo -e " $(OK) $@"
