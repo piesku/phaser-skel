@@ -1,0 +1,30 @@
+        Phaser skel
+        ===========
+
+A simple and modern template for bootstrapping Phaser games.
+
+
+        Available commands
+        ------------------
+
+Build and run once:
+
+    npm install
+    make build
+    make serve
+
+Watch the source and rebuild on changes:
+
+    make watch
+
+Build and minify:
+
+    make dist
+
+
+        Public files
+        ------------
+
+The public/ folder should be copied on a remote server.  The play/ subdir is
+where the game is located.  play/index.html uses the minified bundle.
+play/debug.html uses the unminified bundle and is suitable for debugging.
