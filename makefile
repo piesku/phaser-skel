@@ -44,7 +44,7 @@ public/play/bundle.min.js: public/play/bundle.js
 	    --mangle \
 	    --screw-ie8 \
 	    --output $@
-	@echo -e " $(OK) $@ minified"
+	@echo -e " $(OK) $@ built"
 
 public/play/phaser.%: node_modules/phaser/build/phaser.%
 	@cp $< $@
