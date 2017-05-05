@@ -1,16 +1,14 @@
 // vim: ts=4 et sts=4 sw=4
 
 import { Game, AUTO } from "phaser";
+import Hello from "./state_hello";
 
-new Game(
-    800, 600, AUTO, "game", { preload, create, update }
-);
-
-function preload() {
+class MyGame extends Game {
+    constructor() {
+        super(500, 500, AUTO, "game");
+        this.state.add("Hello", Hello, false);
+        this.state.start("Hello");
+    }
 }
 
-function create() {
-}
-
-function update() {
-}
+new MyGame();
