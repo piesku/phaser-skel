@@ -5,7 +5,7 @@ import Hello from "./state_hello";
 
 class MyGame extends Game {
     constructor() {
-        super(500, 500, AUTO, "game");
+        super(600, 400, AUTO, "game");
         this.state.add("Hello", Hello, false);
         this.state.start("Hello");
     }
